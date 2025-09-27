@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harga Dan Paket Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jasweb Menyediakan jasa pembuatan website murah, profesional, dan cepat, cocok untuk bisnis , toko online, potofolio dan lainnya ">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Favicon -->
+     <link rel="icon" href="/static/image/logo 4.png" type="image/png">
+</head>
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+               <!-- Logo -->
+             <a class="navbar-brand" href="" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+              <img src="/static/image/foto1000.png" alt="JasWeb Logo" style="height: 50px;" />
+             <span style="font-size: 1.1rem; font-weight: 600; color: #ffffff;">Solution Website</span>
+            </a>
+
+
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggle" id="navbar-toggle">☰</button>
+
+            <!-- Navigation Menu -->
+            <ul class="navbar-nav">
+               <li><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+
+                <li><a class="nav-link" href="/Pricelist"><span class="material-icons"></span> Pricelist</a></li>
+
+                <li><a class="nav-link" href="/login"><span class="material-icons">person</span> LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Dibuat dengan teknologi terbaru, dikelola oleh tim profesional</h1>
+        <p>Gratis hosting 1 tahun + domain .com/my.id • Harga terjangkau, kualitas maksimal</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('PaketMahasiswa') }}" class="btn btn-secondary">📦 Paket Mahasiswa | UMKM | Portofolio</a>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Price List Section -->
+<section id="PriceList" class="bg-light">
+    <div class="container text-center">
+        <h2></h2>
+        <div class="row card-grid">
+
+            <!-- Paket 1 -->
+<div class="card">
+    <details>
+        <summary>
+            <div class="card-summary">
+                <img src="/static/image/OIP 34.jpg" alt="Website Café">
+                <div class="card-text">
+                    <h5>PAKET Premium  & Full Service: Website Cafe & Restoran</h5>
+                    <p>
+                        Website modern dengan menu digital, reservasi online, galeri foto, integrasi WhatsApp & Maps, plus domain & hosting gratis 1 tahun.
+                        Sudah termasuk sistem kasir (tablet + POS), absensi karyawan, laporan penjualan otomatis, customer dashboard, membership & voucher, hingga keamanan data dengan server private + SSL.
+                        Semua teknologi terbaru (WordPress, HTML5, CSS3, JavaScript, Python, MySQL) dan gratis maintenance + support 1 tahun penuh. 🚀.
+                    </p>
+                </div>
+            </div>
+        </summary>
+        <div class="card-detail">
+            <img src="/static/image/Screenshot 2025-08-10 121310.png" alt="Website Café Full">
+            <img src="/static/image/orderan menu.png" alt="Website Café Full">
+            <img src="/static/image/Screenshot 2025-09-17 202835.png" alt="Website Café Full">
+            <img src="/static/image/Screenshot 2025-09-17 202257.png" alt="Website Café Full">
+
+            <ul>
+                <!-- 🌐 Website & Online Presence -->
+                <li>Desain Responsif (bisa diakses dari HP, laptop, & tablet)</li>
+                <li>Halaman Menu Digital (update menu makanan & minuman kapan saja)</li>
+                <li>Galeri Foto & Video (makanan, minuman, suasana café/resto)</li>
+                <li>Formulir Pemesanan & Reservasi Online</li>
+                <li>Integrasi Google Maps & WhatsApp</li>
+                <li>SEO Optimized (website mudah ditemukan di Google)</li>
+                <li>Gratis Domain & Hosting Tahun Pertama</li>
+
+                <!-- 👥 Customer & User Experience -->
+                <li>Customer Dashboard (akun pelanggan untuk simpan riwayat order & reservasi)</li>
+                <li>E-Voucher & Membership Loyalty System</li>
+                <li>Review & Rating System</li>
+                <li>Request Website Orderan / Portofolio (custom update menu, promo, dll)</li>
+
+                <!-- 💻 Sistem Manajemen Resto -->
+                <li>Gratis Tablet / MacBook untuk Kasir (POS System)</li>
+                <li>Gratis Aplikasi Absensi Karyawan</li>
+                <li>Stok & Inventaris Management</li>
+                <li>Laporan Penjualan Harian, Mingguan, Bulanan (Auto Generate)</li>
+                <li>Multi-User Admin (Owner, Manager, Staff)</li>
+
+                <!-- 🔐 Keamanan & Server -->
+                <li>Bonus Server Private (dedicated server, bukan shared hosting)</li>
+                <li>SSL Security (HTTPS)</li>
+                <li>Data Enkripsi untuk Transaksi</li>
+                <li>Backup Data Otomatis Harian</li>
+
+                <!-- ⚙️ Teknologi -->
+                <li>WordPress (CMS untuk pengelolaan mudah)</li>
+                <li>HTML5, CSS3, JavaScript (desain modern & responsif)</li>
+                <li>Python (untuk sistem otomatisasi, laporan, AI recommendation menu)</li>
+                <li>MySQL / PostgreSQL Database</li>
+                <li>API Integration (pembayaran online, WhatsApp, Gojek/GrabFood, ShopeeFood)</li>
+                <li>Cloud Technology (backup & performa cepat)</li>
+
+                <!-- 🎁 Bonus & Support -->
+                <li>Free Maintenance 1 Tahun</li>
+                <li>Training Staff & Owner (update menu, cek laporan, dll)</li>
+                <li>Support Teknis 24/7 via WhatsApp & Email</li>
+                <li>Gratis Update Fitur Minor</li>
+            </ul>
+
+            <p><strong>💰 Harga Normal:</strong> <span style="text-decoration: line-through;">Rp 150.000.000</span></p>
+            <p><strong>🎉 Promo Spesial:</strong> Rp 145.999.999</p>
+
+            <!-- Tombol Order Sekarang -->
+            <button class="order-btn">🛒 Order Sekarang</button>
+        </div>
+    </details>
+</div>
+                
+            <!-- Paket 1 -->
+            <div class="card">
+                <details>
+                    <summary>
+                        <div class="card-summary">
+                            <img src="/static/image/OIP 34.jpg" alt="Website Café">
+                            <div class="card-text">
+                                <h5>PAKET Pro : Website Cafe &  Restoran</h5>
+                                <p>Website responsif dengan menu digital & order online yang langsung terhubung ke kasir.
+                                   Dilengkapi tablet kasir, printer struk, aplikasi POS sederhana untuk rekap transaksi, serta SSL Security, hosting + domain 1 tahun, dan backup mingguan.
+                                    Dibangun dengan teknologi modern (HTML5, CSS3, JavaScript, PHP & MySQL)..</p>
+                            </div>
+                        </div>
+                    </summary>
+                    <div class="card-detail">
+                        <img src="/static/image/Screenshot 2025-08-10 121310.png" alt="Website Café Full">
+                         <img src="/static/image/orderan menu.png" alt="Website Café Full">
+                         <img src="/static/image/Screenshot 2025-09-17 202835.png" alt="Website Café Full">
+
+                           
+                           <ul>
+    <!-- 🌐 Website Dasar -->
+    <li>Desain responsif (HP & Laptop)</li>
+    <li>Halaman Menu Digital (mudah di-update)</li>
+    <li>Form orderan online (langsung masuk ke sistem kasir/admin)</li>
+
+    <!-- 💻 Sistem Kasir -->
+    <li>Tablet Android untuk kasir</li>
+    <li>Mesin cetak struk (printer thermal)</li>
+    <li>Aplikasi POS sederhana (rekap transaksi & cetak struk)</li>
+
+    <!-- 🔐 Keamanan & Maintenance -->
+    <li>SSL Security (HTTPS)</li>
+    <li>Hosting + domain (tahun pertama)</li>
+    <li>Backup mingguan (manual/otomatis)</li>
+
+    <!-- ⚙️ Teknologi -->
+    <li>HTML5, CSS3, JavaScript (frontend modern)</li>
+    <li>PHP + MySQL (backend & database orderan)</li>
+    <li>Integrasi POS sederhana di tablet kasir</li>
+</ul>
+
+                        <p><strong>💰 Harga Normal:</strong> <span style="text-decoration: line-through;">Rp 14.000.000</span></p>
+                        <p><strong>🎉 Promo Spesial:</strong> Rp 9.999.999</p>
+                    </div>
+                </details>
+            </div>
+
+  <!-- Paket 3 -->
+            <div class="card">
+                <details>
+                    <summary>
+                        <div class="card-summary">
+                            <img src="/static/image/foto21.png" alt="Portofolio Pribadi">
+                            <div class="card-text">
+                                <h5> Prototipe Website & Aplikasi Absensi Karyawan</h5>
+                                <p>Kami menyediakan aplikasi absensi berbasis website yang bisa di-custom sesuai kebutuhan perusahaan / sekolah Anda.</p>
+                            </div>
+                        </div>
+                    </summary>
+                    <div class="card-detail">
+                        <img src="/static/image/foto22.jpg" alt="Portofolio Pribadi Full">
+                         <img src="/static/image/foto23.jpg" alt="Portofolio Pribadi Full">
+                          <img src="/static/image/foto24.jpg" alt="Portofolio Pribadi Full">
+                           <img src="/static/image/foto25.jpg" alt="Portofolio Pribadi Full">
+                            <img src="/static/image/foto26.jpg" alt="Portofolio Pribadi Full">
+                             <img src="/static/image/foto27.jpg" alt="Portofolio Pribadi Full">
+                       <ul>
+    <li>Fitur Admin:
+        <ul>
+            <li>Kelola & daftar karyawan</li>
+            <li>Input & hitung gaji karyawan</li>
+            <li>Monitoring absensi karyawan</li>
+        </ul>
+    </li>
+    <li>Dashboard Karyawan:
+        <ul>
+            <li>Riwayat absensi lengkap</li>
+            <li>Profil karyawan</li>
+            <li>Informasi gaji</li>
+        </ul>
+    </li>
+     <li>Menggunakan Bahasa Pemograman Python Dan Framework Flask</li>
+    <li>Masih prototipe – bisa request fitur sesuai kebutuhan perusahaan/sekolah</li>
+</ul>
+
+<p><strong>Harga:</strong></p>
+<ul>
+    <ul>
+    <li>Sewa / Beli Putus: <a href="https://wa.me/6287722898695" target="_blank">Silahkan pesan melalui WhatsApp untuk harga</a></li>
+    <li>Harga bisa menyesuaikan dengan jumlah karyawan, fitur tambahan, dan sistem yang diinginkan</li>
+</ul>
+
+</ul>
+
+
+                    </div>
+                </details>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6287722898695" class="whatsapp-float" target="_blank">
+    <img src="/static/image/whattsapp.jpg" alt="Chat WhatsApp">
+      Konsultasi Gratis di whatsApp
+</a>
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Sitemap Links -->
+    <div class="footer-links">
+      <div>
+        <h4>Jasa Pembuatan Website - JasWeb</h4>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Web design</a></li>
+          <li><a href="">Digital Marketing</a></li>
+          <li><a href="">Career</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="">Content Creator</a></li>
+          <li><a href="">Shopify</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project request</a></li>
+          <li><a href="">Web Development</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+<div class="footer-hours"> <h4>Jam Sekarang.</h4> <p id="current-time"></p> </div>
+
+    <!-- Bagian Gambar -->
+<div class="footer-image">
+  <h4>our property :</h4>
+  <a href="/">
+    <img src="/static/image/Screenshot 2025-09-10 204851.png" alt="Footer Logo">
+  </a>
+</div>
+
+
+  </div>
+  <!-- Footer Bottom -->
+<div class="footer-bottom">
+  <div class="social">
+    <a href="https://www.facebook.com/share/14GeSjzF9fm/" target="_blank" aria-label="Facebook">
+      <img src="/static/image/ffacebook.jpg" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="https://www.instagram.com/abdl.sa?igsh=MWQ4NjVmMXN1bW9jZA==" target="_blank" aria-label="Instagram">
+      <img src="/static/image/instagram.jpg" alt="Instagram" width="24" height="24">
+    </a>
+    <a href="https://www.linkedin.com/in/septian-abdul-karim-a5763331a" target="_blank" aria-label="LinkedIn">
+      <img src="/static/image/linkind.jpg" alt="LinkedIn" width="24" height="24">
+    </a>
+  </div>
+  <p>© 2025 JasWeb — All rights reserved.</p>
+</div>
+
+</footer>
+
+</body>
+<script src="/static/css/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const targetTime = new Date('2027-08-16T00:00:00+07:00').getTime();
+    const countdownEl = document.getElementById('countdown-cvina');
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetTime - now;
+
+        if (distance <= 0) {
+            countdownEl.textContent = "Countdown: Sudah tiba! 🚀";
+            clearInterval(interval);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.textContent = `Countdown: ${days} hari ${hours} jam ${minutes} menit ${seconds} detik`;
+    }
+
+    updateCountdown(); 
+    const interval = setInterval(updateCountdown, 1000);
+});
+
+// Blok klik kanan
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+}, false);
+
+// Blok shortcut keyboard (CTRL+U, CTRL+C, CTRL+S, PrintScreen, dll)
+document.addEventListener("keydown", function(e) {
+  if (e.ctrlKey && (e.key === "u" || e.key === "s" || e.key === "c")) {
+    e.preventDefault();
+  }
+  if (e.key === "PrintScreen") {
+    navigator.clipboard.writeText("");
+    alert("Screenshot diblokir!");
+  }
+});
+</script>
+</html>

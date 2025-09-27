@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Performance Website Kami </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jasweb Menyediakan jasa pembuatan website murah, profesional, dan cepat, cocok untuk bisnis , toko online, potofolio dan lainnya ">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/css/style3.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/image/logo 4.png" type="image/png">
+</head>
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+              <!-- Logo -->
+            <a class="navbar-brand" href="" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+              <img src="/static/image/foto1000.png" alt="JasWeb Logo" style="height: 50px;" />
+             <span style="font-size: 1.1rem; font-weight: 600; color: #ffffff;">Solution Website</span>
+            </a>
+
+
+
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggle" id="navbar-toggle">☰</button>
+
+            <!-- Navigation Menu -->
+            <ul class="navbar-nav">
+               <li><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+                
+               <li><a class="nav-link" href="{{ url_for('performance') }}"> Performance</a></li>
+
+
+
+                <li><a class="nav-link" href="/login"><span class="material-icons">person</span> LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Website Cepat & Handal untuk Bisnis Anda ⚡</h1>
+        <p>Optimasi performa maksimal, loading super cepat, dan pengalaman pengguna terbaik.</p>
+        <div class="hero-buttons">
+        </div>
+    </div>
+</section>
+<section id="web-performance">
+  <h2>Website Performance Report</h2>
+  <p>Berikut ini hasil uji kecepatan website menggunakan GTmetrix dan PageSpeed Insights. Kami pastikan website yang kami buat cepat, ringan, dan optimal di semua perangkat.</p>
+
+  <ul>
+    <li><strong>Desktop Score:</strong> 99%</li>
+    <li><strong>Mobile Score:</strong> 79%</li>
+    <li><strong>LCP:</strong> 992ms</li>
+    <li><strong>Structure:</strong> 98%</li>
+  </ul>
+
+  <img src="/static/image/foto1.png" alt="Hasil Tes GTmetrix">
+  <img src="/static/image/fotoo2.png" alt="Hasil Tes GTmetrix">
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6287722898695" class="whatsapp-float" target="_blank">
+    <img src="/static/image/whattsapp.jpg" alt="Chat WhatsApp">
+    Konsultasi Gratis di whatsApp
+</a>
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Sitemap Links -->
+    <div class="footer-links">
+      <div>
+        <h4>Jasa Pembuatan Website - JasWeb</h4>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Web design</a></li>
+          <li><a href="">Digital Marketing</a></li>
+          <li><a href="">Career</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="">Content Creator</a></li>
+          <li><a href="">Shopify</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project request</a></li>
+          <li><a href="">Web Development</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+<div class="footer-hours"> <h4>Jam Sekarang.</h4> <p id="current-time"></p> </div>
+
+    <!-- Bagian Gambar -->
+<div class="footer-image">
+  <h4>our property :</h4>
+  <a href="/">
+    <img src="/static/image/Screenshot 2025-09-10 204851.png" alt="Footer Logo">
+  </a>
+</div>
+
+
+  </div>
+  <!-- Footer Bottom -->
+<div class="footer-bottom">
+  <div class="social">
+    <a href="https://www.facebook.com/share/14GeSjzF9fm/" target="_blank" aria-label="Facebook">
+      <img src="/static/image/ffacebook.jpg" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="https://www.instagram.com/abdl.sa?igsh=MWQ4NjVmMXN1bW9jZA==" target="_blank" aria-label="Instagram">
+      <img src="/static/image/instagram.jpg" alt="Instagram" width="24" height="24">
+    </a>
+    <a href="https://www.linkedin.com/in/septian-abdul-karim-a5763331a" target="_blank" aria-label="LinkedIn">
+      <img src="/static/image/linkind.jpg" alt="LinkedIn" width="24" height="24">
+    </a>
+  </div>
+  <p>© 2025 JasWeb — All rights reserved.</p>
+</div>
+
+</footer>
+
+</body>
+<script src="/static/css/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const targetTime = new Date('2027-08-16T00:00:00+07:00').getTime();
+    const countdownEl = document.getElementById('countdown-cvina');
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetTime - now;
+
+        if (distance <= 0) {
+            countdownEl.textContent = "Countdown: Sudah tiba! 🚀";
+            clearInterval(interval);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.textContent = `Countdown: ${days} hari ${hours} jam ${minutes} menit ${seconds} detik`;
+    }
+
+    updateCountdown(); 
+    const interval = setInterval(updateCountdown, 1000);
+});
+
+// Blok klik kanan
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+}, false);
+
+// Blok shortcut keyboard (CTRL+U, CTRL+C, CTRL+S, PrintScreen, dll)
+document.addEventListener("keydown", function(e) {
+  if (e.ctrlKey && (e.key === "u" || e.key === "s" || e.key === "c")) {
+    e.preventDefault();
+  }
+  if (e.key === "PrintScreen") {
+    navigator.clipboard.writeText("");
+    alert("Screenshot diblokir!");
+  }
+});
+</script>
+</html>

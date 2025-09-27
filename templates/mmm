@@ -1,0 +1,174 @@
+<!-- Skills Section -->
+<section id="skills" class="bg-dark text-white">
+    <div class="container text-center">
+        <h2>Skills & Tools</h2>
+        <div class="row skills-list">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Flask</div>
+            <div class="skill-item">Bootstrap</div>
+            <div class="skill-item">Tailwind CSS</div>
+            <div class="skill-item">SQL / SQLite</div>
+            <div class="skill-item">Git & GitHub</div>
+            <div class="skill-item">AI Integration</div>
+            <div class="skill-item">REST API</div>
+            <div class="skill-item">Firebase</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git add .
+git commit -m "Update index.html, pricelist.html, pricelist2.html,  project.html, performance.html , login.html, register.html dan style.css, style2.css , style2.css" 
+git push origin main
+
+
+
+git add .
+git commit -m "Update Icon" 
+git push origin main
+
+<section class="collaboration">
+  <div class="collab-container">
+    <h2>✨ Promosikan Bisnis Anda Bersama Kami</h2>
+    <p>
+      Dapatkan exposure maksimal dengan memasang banner produk atau layanan Anda 
+      di website kami. Jangkau ribuan pengunjung setiap bulan dengan biaya yang terjangkau.
+    </p>
+    <a href="/detailkerjasama" class="btn btn-detail">🔍 Lihat Detail</a>
+  </div>
+</section>
+
+
+<section id="web-performance">
+  <h2>Website Performance Report</h2>
+  <p>Berikut ini hasil uji kecepatan website menggunakan GTmetrix dan Lighthouse. Kami pastikan website yang kami buat cepat, ringan, dan optimal di semua perangkat.</p>
+
+  <ul>
+    <li><strong>Desktop Score:</strong> 99%</li>
+    <li><strong>Mobile Score:</strong> 79%</li>
+    <li><strong>LCP:</strong> 992ms</li>
+    <li><strong>Structure:</strong> 98%</li>
+  </ul>
+
+  <img src="/static/image/gtmetrix-result.png" alt="Hasil Tes GTmetrix">
+</section>
+
+
+
+
+/* Performance Section */
+#web-performance {
+  background: linear-gradient(135deg, #f5f7fa, #e0e7ff);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+#web-performance h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#web-performance p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+#web-performance ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  text-align: left;
+}
+
+#web-performance ul li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+#web-performance ul li strong {
+  color: #2c3e50;
+}
+
+#web-performance img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+#web-performance img:hover {
+  transform: scale(1.02);
+}
+
+
+
+/* Blok klik kanan gambar */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none; /* gambar tidak bisa di klik kanan */
+}
+
+/* Blok copy teks */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+
+.order-btn {
+    background: #3b0f8d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none; /* awalnya diumpetin */
+}
+
+details[open] .order-btn {
+    display: inline-block; /* muncul pas detail dibuka */
+}
+
+.order-btn:hover {
+    background: #5e32a8;
+}

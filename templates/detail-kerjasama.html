@@ -1,0 +1,191 @@
+<section class="kerjasama-detail">
+  <div class="container">
+    <h2>📢 Mengapa Pasang Banner di Website Kami?</h2>
+    <p>
+      Website kami dikunjungi oleh ribuan pengunjung aktif setiap bulan. 
+      Dengan menempatkan banner di sini, bisnis Anda akan mendapatkan visibilitas lebih luas, 
+      meningkatkan brand awareness, dan berpotensi menambah penjualan.
+    </p>
+
+    <h3>🎯 Pilihan Paket Kerjasama</h3>
+    <div class="paket-list">
+      <div class="paket-card">
+        <h4>Paket Basic</h4>
+        <p>Ukuran 300x250 px (sidebar)</p>
+        <p>Durasi: 30 hari</p>
+        <p><strong>Rp 250.000</strong></p>
+      </div>
+
+      <div class="paket-card">
+        <h4>Paket Premium</h4>
+        <p>Ukuran 728x90 px (header)</p>
+        <p>Durasi: 30 hari</p>
+        <p><strong>Rp 500.000</strong></p>
+      </div>
+
+      <div class="paket-card">
+        <h4>Paket Eksklusif</h4>
+        <p>Banner di Homepage Utama</p>
+        <p>Durasi: 30 hari</p>
+        <p><strong>Rp 1.000.000</strong></p>
+      </div>
+    </div>
+
+    <h3>✅ Keuntungan yang Anda Dapatkan</h3>
+    <ul>
+      <li>Jangkauan ribuan pengunjung website tiap bulan</li>
+      <li>Banner ditampilkan di posisi strategis</li>
+      <li>Meningkatkan awareness dan kepercayaan brand</li>
+    </ul>
+
+    <div class="cta-order">
+      <a href="order-kerjasama.html" class="btn btn-order">🛒 Order Kerjasama Sekarang</a>
+    </div>
+  </div>
+</section>
+
+
+<style>
+    /* ==== Global Reset ==== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==== Container ==== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ==== Section Header ==== */
+.kerjasama-detail h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.kerjasama-detail p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* ==== Paket List ==== */
+.paket-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.paket-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paket-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.paket-card h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.paket-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.paket-card strong {
+  font-size: 20px;
+  color: #28a745;
+}
+
+/* ==== Benefit List ==== */
+.kerjasama-detail h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.kerjasama-detail ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.kerjasama-detail ul li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  font-size: 16px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.kerjasama-detail ul li::before {
+  content: "✔";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: 15px;
+}
+
+/* ==== CTA Button ==== */
+.cta-order {
+  text-align: center;
+}
+
+.btn-order {
+  display: inline-block;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(40,167,69,0.3);
+  transition: 0.3s;
+}
+
+.btn-order:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(32,201,151,0.4);
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .kerjasama-detail h2 {
+    font-size: 28px;
+  }
+  .paket-card h4 {
+    font-size: 20px;
+  }
+  .btn-order {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
+}
+
+</style>

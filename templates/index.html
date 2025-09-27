@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasa Pembuatan Website Profesional & Murah | JasWeb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jasweb Menyediakan jasa pembuatan website modern, profesional, dan SEO, friendly untuk UMKM, bisnis dan personal branding. Hubungikami sekarang!">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/image/logo 4.png" type="image/png">
+    <!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Jaswebcom - Jasa Website Profesional">
+<meta property="og:description" content="Jasa pembuatan website untuk bisnis, UMKM, dan personal branding. Gratis konsultasi.">
+<meta property="og:image" content="https://jasweb.my.id/assets/img/banner.jpg">
+<meta property="og:url" content="https://jasweb.my.id">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jaswebcom - Jasa Website Profesional">
+<meta name="twitter:description" content="Pembuatan website UMKM dan bisnis. Cepat, profesional, dan terpercaya.">
+<meta name="twitter:image" content="https://jasweb.my.id/static/image/banner-2.jpg">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Jaswebcom",
+  "url": "https://jaswebcom.my.id",
+  "logo": "https://jasweb.my.id/static/image/banner.jpg,
+  "description": "Jasa pembuatan website profesional untuk bisnis, personal branding, dan UMKM.",
+  "sameAs": [
+    "https://www.instagram.com/abdl.sa",
+  ]
+}
+</script>
+
+</head>
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+              <a class="navbar-brand" href="" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+              <img src="/static/image/foto1000.png" alt="JasWeb Logo" style="height: 50px;" />
+             <span style="font-size: 1.1rem; font-weight: 600; color: #ffffff;">Solution Website</span>
+            </a>
+
+
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggle" id="navbar-toggle">☰</button>
+
+            <!-- Navigation Menu -->
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="#hero"><span class="material-icons"></span> Home</a></li>
+                <li><a class="nav-link" href="#about"><span class="material-icons"></span> About</a></li>
+                <li><a class="nav-link" href="#services"><span class="material-icons"></span> Services</a></li>
+                 <li><a class="nav-link" href="{{ url_for('project') }}">Project</a></li>          
+                <li><a class="nav-link" href="/login"><span class="material-icons">person</span> LOGIN </a></li>
+            </ul>
+        </div>
+    </nav>
+
+ <!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Buat Website Profesional untuk Bisnis Anda 🚀</h1>
+        <p>Gratis hosting 1 tahun + domain .com/my.id • Harga terjangkau, kualitas maksimal</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('pricelist') }}" class="btn btn-secondary">
+                📦 Paket Premium | Pro | Aplikasi
+            </a>
+            <a href="{{ url_for('kerjasama_brand') }}" class="btn btn-secondary">
+                Promosikan Brandmu
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <section id="about" class="bg-light">
+  <div class="container about-flex">
+    <img src="/static/image/OIP 40.jpg" alt="Foto Abdul Karim" id="about-img" tabindex="0" />
+    
+    <div class="about-text hidden" id="about-text">
+      <h2>Tentang JasWeb</h2>
+      <p>
+        JasWeb hadir untuk membantu Anda memiliki website profesional dengan cara yang mudah, cepat, dan terjangkau. 
+        Kami percaya bahwa setiap bisnis, baik skala kecil maupun besar, membutuhkan website modern agar bisa dikenal lebih luas di dunia digital.
+      </p>
+
+      <p><strong>✨ Keunggulan layanan kami:</strong></p>
+      <ul class="about-list">
+        <li>Gratis hosting 1 tahun (langsung aktif tanpa ribet)</li>
+        <li>Gratis domain (.com / .my.id) agar bisnis Anda terlihat profesional</li>
+        <li>Desain modern & mobile friendly sesuai kebutuhan</li>
+        <li>Support & maintenance penuh agar website selalu berjalan lancar</li>
+        <li>Harga terjangkau dengan kualitas maksimal</li>
+      </ul>
+
+      <p>
+        Dengan JasWeb, Anda tidak perlu pusing memikirkan hal teknis. 
+        Fokus saja mengembangkan bisnis Anda, biarkan kami yang mengurus website Anda dari awal hingga siap digunakan.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Services Section -->
+<section id="services" class="bg-light">
+    <div class="container text-center">
+        <h2>Layanan Kami </h2>
+        <div class="row">
+
+            <!-- Service 1 -->
+            <div class="card project-card">
+                <img src="/static/image/website2.png" alt="Website Modern">
+                <div class="card-body">
+                    <h4> Website Modern</h4>
+                    <p>Membuat website cepat,responsif, dan modern uang menonjolkan bisnis anda di dunia digital.</p>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card project-card">
+                <img src="/static/image/UI&UX.png" alt="Web Project Idea">
+                <div class="card-body">
+                    <h4>UI & UX Profesional</h4>
+                    <p>Desain antarmuka user-friendly yang membuat pengunjung betah dan mudah menemukan informasi.</p>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card project-card">
+                <img src="/static/image/website5.png" alt="Maintenance & Revisi">
+                <div class="card-body">
+                    <h4>Support dan Maintenance</h4>
+                    <p>Dukungan lengkap dan panduan pengelolaan website agar bisnis anda tetap optimal tanpa ribet.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section Tech Stack -->
+<section id="tech-stack" class="tech-stack">
+  <div class="container">
+    <h2>Bahasa Pemograman & Teknologi</h2>
+    <p>Kami menggunakan berbagai bahasa pemrograman dan framework modern:</p>
+    <div class="tech-icons">
+      <div class="icon-card">
+        <img src="/static/image/NODE.JS.png" alt="PHP">
+        <span>NODE.JS</span>
+      </div>
+      <div class="icon-card">
+        <img src="/static/image/PYTHON.jpg" alt="Python">
+        <span>PYTHON </span>
+      </div>
+      <div class="icon-card">
+        <img src="/static/image/JavaScript.png" alt="JavaScript">
+        <span>JAVASCRIPT</span>
+      </div>
+      <div class="icon-card">
+        <img src="/static/image/angular.png"alt="HTML5">
+        <span>ANGULAR</span>
+      </div>
+      <div class="icon-card">
+        <img src="/static/image/LARAVEL 2.png" alt="CSS3">
+        <span>LARAVEL</span>
+      </div>
+      <div class="icon-card">
+        <img src="/static/image/reactjs.png" alt="CSS3">
+        <span>REACT.JS</span>
+      </div>
+      <div class="icon-card">
+        <img src="/static/image/C-PNG.png" alt="CSS3">
+        <span>C++</span>
+      </div>
+       <div class="icon-card">
+        <img src="/static/image/Java.png" alt="CSS3">
+        <span>JAVA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Why Hire Me Section -->
+    <section id="why" class="bg-white">
+        <div class="container text-center">
+            <h2>Keunggulan yang Membuat Anda Unggul</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h4>Website Profesional & Modern.</h4>
+                        <p>Desain responsif, cepat dan sesuai kebutuhan bisnis anda. </p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h4>Teknologi Terbaru & Keahlian.</h4>
+                        <p>Menggunakan WordPress,HTML5, CSS dan AI Tools untuk hasil maksimal. </p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h4>Support & Kemudahan.</h4>
+                        <p>Panduan dari desain hingga live online , plus dukungan jika ada kendala.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Kenapa Jasa Pembuatan Website Mahal -->
+<section id="alasan-mahal" class="info-section">
+  <div class="container animate-on-scroll">
+    <h2><i class="fas fa-coins"></i> Kenapa Website Profesional Kami??</h2>
+    <p>Website profesional adalah kunci untuk membangun kepercayaan dan pertumbuhan bisnis online. JasWeb menghadirkan situs yang cepat, responsif, dan modern, siap digunakan di semua perangkat.</p>
+    <ul>
+      <li><i class="fas fa-shield-alt"></i> Desain modern & responsif – Tampilan profesional di semua perangkat.</li>
+      <li><i class="fas fa-bolt"></i> Cepat & Mudah Dikelola – Langsung siap pakai dan mudah di update.</li>
+      <li><i class="fas fa-hands-helping"></i> Support & Panduan Lengkap – Bantuan dari tim kami setiap saat.</li>
+      <li><i class="fas fa-chart-line"></i> Investasi yang Sepadan – Solusi nyata untuk meningkatkan bisnis online Anda.</li>
+      <li>
+  <i class="fas fa-tachometer-alt"></i>
+  Performance Website – 
+  Optimasi kecepatan dan performa. 
+  <a class="nav-link d-inline" href="{{ url_for('performance') }}">Lihat detail</a>
+</li>
+
+    </ul>
+    <p><i class="fas fa-rocket"></i>Mulai website profesional Anda sekarang, dan wujudkan bisnis online yang sukses bersama JasWeb.</p>
+  </div>
+</section>
+
+
+<!-- Kenapa Bisnis Kamu Butuh Website -->
+<section id="kenapa-website" class="info-section">
+    <div class="container">
+        
+        <h2><i class="fas fa-globe"></i>Manfaat Website Untuk Bisnis Anda </h2>
+        <ul>
+            <li><i class="fas fa-clock"></i> Meningkatkan Kredibilitas Bisnis – Pelanggan lebih percaya dengan bisnis yang punya website profesional.</li>
+            <li><i class="fas fa-briefcase"></i> Meningkatkan Jangkauan & Visibilitas – bisa di akses kapan saja oleh calon pelanggan dari seluruh dunia. </li>
+             <li><i class="fas fa-chart-line"></i> Mendukung Pertumbuhan Bisnis – Website profesional membantu branding, lead generation, dan penjualan online.  </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Proses Kerja -->
+<section id="proses-kerja" class="info-section">
+    <div class="container">
+        <h2><i class="fas fa-project-diagram"></i> Proses Kerja Kami</h2>
+        <ol>
+            <li><i class="fas fa-phone-alt"></i> Konsultasi kebutuhan dan tujuan bisnis</li>
+            <li><i class="fas fa-file-signature"></i> Penawaran harga dan fitur</li>
+            <li><i class="fas fa-pencil-ruler"></i> Desain UI/UX awal untuk disetujui</li>
+            <li><i class="fas fa-code"></i> Proses development & coding</li>
+            <li><i class="fas fa-vial"></i> Uji coba dan revisi</li>
+            <li><i class="fas fa-rocket"></i> Launching website + training</li>
+            <li><i class="fas fa-sync-alt"></i> Support & Maintenance</li>
+        </ol>
+        <p></p>
+    </div>
+</section>
+
+
+<!-- Stats -->
+<section class="bg-white" id="stats">
+    <div class="container text-center">
+        <h2>JasWeb in Numbers</h2>
+        <div class="row">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h1>1</h1>
+                    <p>Project Selesai</p>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="card-body">
+                    <h1>1</h1>
+                    <p>Client Puas</p>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="card-body">
+                    <h1>6</h1>
+                    <p>Tools AI Digunakan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-light">
+    <div class="container text-center">
+        <h2>Testimonials</h2>
+        <div class="row">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <p>"Pelayanan cepat dan hasilnya sesuai ekspektasi! Saya puas dengan website yang dibuat oleh JasWebcom."</p>
+                <h5>– Sarah, Pemilik Café KopiKenangan</h5>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <p>"Profesional, komunikatif, dan mengerti kebutuhan saya sebagai pelaku UMKM. Terima kasih!"</p>
+                <h5>– Budi, Owner Toko Online BajuKita</h5>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+                <p>"Website portofolionya keren banget! Bikin saya tampil lebih profesional di mata HRD."</p>
+                <h5>– Lina, Job Seeker</h5>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6287722898695" class="whatsapp-float" target="_blank">
+    <img src="/static/image/whattsapp.jpg" alt="Chat WhatsApp">
+      Konsultasi Gratis di whatsApp
+</a>
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Sitemap Links -->
+    <div class="footer-links">
+      <div>
+        <h4>Jasa Pembuatan Website - JasWeb</h4>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Web design</a></li>
+          <li><a href="">Digital Marketing</a></li>
+          <li><a href="">Career</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="">Content Creator</a></li>
+          <li><a href="">Shopify</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project request</a></li>
+          <li><a href="">Web Development</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+<div class="footer-hours"> <h4>Jam Sekarang.</h4> <p id="current-time"></p> </div>
+
+    <!-- Bagian Gambar -->
+<div class="footer-image">
+  <h4>our property :</h4>
+  <a href="/">
+    <img src="/static/image/Screenshot 2025-09-10 204851.png" alt="Footer Logo">
+  </a>
+</div>
+
+
+  </div>
+  <!-- Footer Bottom -->
+<div class="footer-bottom">
+  <div class="social">
+    <a href="https://www.facebook.com/share/14GeSjzF9fm/" target="_blank" aria-label="Facebook">
+      <img src="/static/image/ffacebook.jpg" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="https://www.instagram.com/abdl.sa?igsh=MWQ4NjVmMXN1bW9jZA==" target="_blank" aria-label="Instagram">
+      <img src="/static/image/instagram.jpg" alt="Instagram" width="24" height="24">
+    </a>
+    <a href="https://www.linkedin.com/in/septian-abdul-karim-a5763331a" target="_blank" aria-label="LinkedIn">
+      <img src="/static/image/linkind.jpg" alt="LinkedIn" width="24" height="24">
+    </a>
+  </div>
+  <p>© 2025 JasWeb — All rights reserved.</p>
+</div>
+
+</footer>
+
+</body>
+<script src="/static/css/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const targetTime = new Date('2027-08-16T00:00:00+07:00').getTime();
+    const countdownEl = document.getElementById('countdown-cvina');
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetTime - now;
+
+        if (distance <= 0) {
+            countdownEl.textContent = "Countdown: Sudah tiba! 🚀";
+            clearInterval(interval);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.textContent = `Countdown: ${days} hari ${hours} jam ${minutes} menit ${seconds} detik`;
+    }
+
+    updateCountdown(); 
+    const interval = setInterval(updateCountdown, 1000);
+});
+
+// Blok klik kanan
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+}, false);
+
+// Blok shortcut keyboard (CTRL+U, CTRL+C, CTRL+S, PrintScreen, dll)
+document.addEventListener("keydown", function(e) {
+  if (e.ctrlKey && (e.key === "u" || e.key === "s" || e.key === "c")) {
+    e.preventDefault();
+  }
+  if (e.key === "PrintScreen") {
+    navigator.clipboard.writeText("");
+    alert("Screenshot diblokir!");
+  }
+});
+</script>
+</html>
