@@ -1996,3 +1996,14 @@ body {
 #web-performance img:hover {
   transform: scale(1.02);
 }
+
+
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 10px 0;
+}
