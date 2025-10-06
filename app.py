@@ -21,7 +21,7 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from werkzeug.utils import secure_filename
 from flask import send_from_directory, abort
-
+from flask import send_from_directory
 # ----------------- Load env -----------------
 load_dotenv()
 
@@ -321,12 +321,17 @@ def project():
 def performance():
     return render_template('performance.html')
 
+
 # Halaman kerjasama brand
 @app.route('/Kerjasama-Brand')
 def kerjasama_brand():
     return render_template('Kerjasama-Brand.html', 
                            brand_standar=brand_standar,
                            brand_premium=brand_premium)
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('.', 'sitemap.xml')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
