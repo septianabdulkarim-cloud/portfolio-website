@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DataWeb - Solusi Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Data<span>Web</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#services">Layanan</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1><span>Selamat Datang</span> di DataWeb</h1>
+    <p>Solusi digital modern berbasis data untuk mengembangkan bisnis Anda ke level berikutnya</p>
+    <a href="#about" class="btn">Jelajahi Lebih Lanjut →</a>
+  </section>
+
+  <!-- Tentang -->
+  <section id="about" class="about">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1581091012184-7e0cdfbb6799" alt="Team" />
+    </div>
+    <div class="about-text">
+      <h2>Mengapa Memilih Kami?</h2>
+      <p>Dengan pengalaman lebih dari 10 tahun di industri digital, kami telah membantu ratusan perusahaan mencapai tujuan mereka melalui solusi berbasis data yang inovatif dan efektif.</p>
+      <ul>
+        <li>✅ Tim profesional berpengalaman</li>
+        <li>✅ Teknologi terkini</li>
+        <li>✅ Dukungan 24/7</li>
+        <li>✅ Harga kompetitif</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="services" class="services">
+    <h2>Layanan Kami</h2>
+    <div class="cards">
+      <div class="card"><h3>📦 Manajemen Data</h3><p>Kelola dan optimalkan data bisnis Anda dengan sistem yang efisien dan aman</p></div>
+      <div class="card"><h3>📊 Analitik Bisnis</h3><p>Dapatkan insight mendalam untuk keputusan yang lebih baik</p></div>
+      <div class="card"><h3>💻 Pengembangan Web</h3><p>Website modern dan responsif sesuai kebutuhan bisnis</p></div>
+      <div class="card"><h3>🛡️ Keamanan Data</h3><p>Lindungi data Anda dengan sistem keamanan enterprise</p></div>
+      <div class="card"><h3>⚡ Otomasi Proses</h3><p>Tingkatkan efisiensi dengan otomatisasi AI</p></div>
+      <div class="card"><h3>🔧 Solusi Custom</h3><p>Aplikasi khusus sesuai kebutuhan unik bisnis Anda</p></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <p>(Contoh proyek bisa ditambahkan di sini)</p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="contact">
+    <h2>Hubungi Kami</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Nama Anda" required />
+      <input type="email" placeholder="Email Anda" required />
+      <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DataWeb. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<style>
+    :root {
+  --primary: #6a00f4;
+  --gradient: linear-gradient(90deg, #dd5ce5, #6e8efb);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #1a0033;
+  color: #fff;
+}
+
+nav.navbar {
+  position: sticky;
+  top: 0;
+  background: #23004d;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav .logo span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #fff;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: var(--gradient);
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #3d0066, #1a0033);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #ccc;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #1a0033;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  gap: 30px;
+  align-items: center;
+  background: #26004d;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text ul {
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-text li {
+  margin: 8px 0;
+}
+
+.services {
+  padding: 60px 20px;
+  background: #30005c;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.portfolio,
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #23004d;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 14px;
+  background: var(--gradient);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background: #14002a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".nav-links a");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      links.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+
+  document.getElementById("contactForm").addEventListener("submit", e => {
+    e.preventDefault();
+    alert("Pesan berhasil dikirim! (simulasi)");
+    e.target.reset();
+  });
+});
+
+</script>
+</html>
