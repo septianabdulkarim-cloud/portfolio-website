@@ -33,7 +33,7 @@
 
 
 git add .
-git commit -m "Update index.html, pricelist.html, pricelist2.html,  project.html, performance.html , login.html, register.html. Kerjasama_Brand.html dan style.css, style2.css , style2.css" 
+git commit -m "Update index.html, pricelist.html, pricelist2.html,  project.html, performance.html , login.html, register.html. Kerjasama_Brand.html, Website_Olshop.html dan style.css, style2.css , style2.css, style8.css" 
 git push origin main
 
 

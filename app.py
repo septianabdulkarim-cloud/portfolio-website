@@ -333,12 +333,20 @@ def kerjasama_brand():
 def sitemap():
     return send_from_directory('.', 'sitemap.xml')
 
+# ====== Route: Website Olshop ======
+@app.route('/websiteolshop')
+def website_olshop():
+    return render_template('Website_Olshop.html')
+
+
+# ====== Route: Register ======
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         email = request.form.get('email', '').strip().lower()
         admin_code = request.form.get('admin_code', '').strip()
 
+        # Validasi email
         if not email or '@' not in email:
             flash("Email tidak valid!", "danger")
             return render_template("register.html")
@@ -350,17 +358,19 @@ def register():
         cur = conn.cursor()
 
         try:
-            # Check existing
+            # Cek apakah email sudah terdaftar di tabel admin
             cur.execute("SELECT 1 FROM users_admin WHERE email = ?", (email,))
             if cur.fetchone():
                 flash("Email sudah terdaftar sebagai admin!", "danger")
                 return render_template("register.html")
 
+            # Cek apakah email sudah terdaftar di tabel client
             cur.execute("SELECT 1 FROM users_client WHERE email = ?", (email,))
             if cur.fetchone():
                 flash("Email sudah terdaftar sebagai client!", "danger")
                 return render_template("register.html")
 
+            # Jika pakai kode admin
             if admin_code:
                 if admin_code != ADMIN_SECRET_CODE:
                     flash("Kode rahasia admin salah!", "danger")
@@ -383,6 +393,7 @@ def register():
                 flash('Link verifikasi admin telah dikirim ke email Anda.', 'success')
                 return redirect(url_for('login'))
 
+            # Jika bukan admin, maka user biasa (client)
             else:
                 cur.execute(
                     "INSERT INTO users_client (email, token, dashboard_url, verified) VALUES (?, ?, ?, 0)",
@@ -400,11 +411,11 @@ def register():
 
                 flash('Link verifikasi telah dikirim ke email Anda.', 'success')
                 return redirect(url_for('login'))
+
         finally:
             conn.close()
 
     return render_template("register.html")
-
 
 @app.route('/verify/<token>')
 def verify_email(token):
