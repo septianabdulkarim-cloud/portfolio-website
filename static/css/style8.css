@@ -2014,10 +2014,10 @@ video {
 
 /* ====== SECTION KEDUA: PAKET WEBSITE ====== */
 section .card {
-    background: #111827;
+    background-color: #111827;
     color: #f3f4f6;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     margin: 60px auto;
     max-width: 1100px;
     padding: 25px;
@@ -2026,10 +2026,10 @@ section .card {
 
 section .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* summary header */
+/* ====== Summary Header ====== */
 .card-summary {
     display: flex;
     align-items: flex-start;
@@ -2056,14 +2056,14 @@ section .card:hover {
     color: #d1d5db;
 }
 
-/* details bagian bawah */
+/* ====== Detail Bagian Bawah ====== */
 .card-detail {
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* galeri gambar */
+/* ====== Galeri Gambar ====== */
 .card-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -2082,7 +2082,7 @@ section .card:hover {
     transform: scale(1.05);
 }
 
-/* daftar fitur */
+/* ====== Daftar Fitur ====== */
 .feature-list {
     list-style: none;
     padding: 0;
@@ -2090,7 +2090,7 @@ section .card:hover {
 }
 
 .feature-list li {
-    background: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 8px 12px;
     border-radius: 8px;
     margin-bottom: 8px;
@@ -2105,10 +2105,10 @@ section .card:hover {
     font-weight: bold;
 }
 
-/* pricing section */
+/* ====== Pricing Section ====== */
 .pricing {
-    background: rgba(34,211,238,0.1);
-    border: 1px solid rgba(34,211,238,0.3);
+    background-color: rgba(34, 211, 238, 0.1);
+    border: 1px solid rgba(34, 211, 238, 0.3);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -2120,7 +2120,7 @@ section .card:hover {
     font-size: 1rem;
 }
 
-/* tombol order */
+/* ====== Tombol Order ====== */
 .order-btn {
     background: linear-gradient(90deg, #06b6d4, #0ea5e9);
     color: white;
@@ -2130,16 +2130,19 @@ section .card:hover {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .order-btn:hover {
     background: linear-gradient(90deg, #0ea5e9, #06b6d4);
     transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* responsif untuk mobile */
+/* ====== Responsif untuk Mobile ====== */
 @media (max-width: 768px) {
     .card-summary {
         flex-direction: column;
@@ -2153,5 +2156,11 @@ section .card:hover {
 
     .card-text h5 {
         font-size: 1rem;
+    }
+
+    .order-btn {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 1.05rem;
     }
 }
